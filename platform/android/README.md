@@ -7,6 +7,13 @@
 	text.setText(string);
 	text.setMovementMethod(LinkMovementMethod.getInstance());
 
+### ProGuard
+
+If you are using ProGuard you might need to add the following options:
+```
+-keep class in.uncod.android.** { *; }
+```
+
 ### Maven Dependency
 If you just want to include Bypass in your Maven project, add the following
 dependency block to your `pom.xml`:
